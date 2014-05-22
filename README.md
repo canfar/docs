@@ -20,7 +20,7 @@ The table below summarizes the features explored for 4 different solutions.
 | Solution      | Integration   | Grouping  | Tagging | Assigning | Open | Anonymous | Timing | Maintenance | Filtering |
 | ------------- |:-------------:|:---------:|:-------:|:---------:|:----:|:---------:|:------:|:-----------:|:---------:|
 | GitHub        | yes           | plugin    | yes     | yes       | yes  | plugin    | plugin | free service| machine   |
-| BitBucket     | ???           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
+| BitBucket     | yes           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
 | GitLab        | ???           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
 | Redmine       | ???           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
 
@@ -35,14 +35,14 @@ Grouping issues is done through milestones.
 * a milestone could be defined either as a user story or a list of tasks within a story
 * no milestones across repositories
 * Webhooks:  
-  * http://waffle.io is a an external service using GitHub issue API that presents a typical Kanban dashboard. Milestones with the same name across different repositories can be defined and the service will recognize it.
-  * http://huboard.com is another similar service for Kanban board. It looks too minimal, but may be some plugins are possible.
+  * [Waffle](http://waffle.io) is a an external service using GitHub issue API that presents a typical Kanban dashboard. Milestones with the same name across different repositories can be defined and the service will recognize it.
+  * [HuBoard](http://huboard.com) is another similar service for Kanban board. It looks too minimal, but may be some plugins are possible.
 
 #### Anonymous
 
 A user has to be registered with GitHub to file an issue to CANFAR. 
 
-The external service http://gitreports.com/ can be used to cover the full Github CANFAR organization and allow anonymous user reports. Or we can also maintain the gitreports application ourselves. Another possibility is to integrate issue reporting with CANFAR 
+The external service [GitReports](http://gitreports.com/) can be used to cover the full Github CANFAR organization and allow anonymous user reports. It is free, but we can also maintain the GitReports application ourselves, may be we can add LDAP signing to it instead of anonymous reports.
 
 
 #### Timing
@@ -51,17 +51,19 @@ GitHub milestones can be defined with a deadline, but no time tracking is done. 
 
 "One thing to keep in mind is such time-tracking tools don't accurately capture all the time spent developing software. We generally want to encourage developers to take the time for important software development tasks that don't involve coding directly such as filing detailed issues, creating pull requests, and conducting testing and design work that live outside of GitHub. Most time-tracking tools don't achieve this alone."
 
-Here is a list of possible services to be used for time trackers on top of GitHub platform:
+Many time-tracking web-hooks or plugins to GitHub exist: [Freckle](http://letsfreckle.com) ($159/month), [Harvest](http://www.getharvest.com) ($99/month), [PivotalTracker](http://pivotaltracker.com) ($100/month), [JIRA]($150/month) are some examples. [Planbox](http://www.planbox.com) (non-profit discount). All those time-tracking are integrated with issue tracking, which forces two sets of issues. Sometimes a connector to synchronize issues exists. [Basecamp](https://basecamp.com/) ($20/month) together with maybe their communication tool Campfire might be the cheaper alternative. Full intergation framework such as [asana](http://asana.com) or [Redbooth](http://redbooth.com) are also possible, but not free. [zapier](http://zapier.com) seems to make the link between issue databases.
 
-1. http://letsfreckle.com/ has a pre-built web-hook for time tracking. It can be enabled per repository. $159/month
-2. http://www.getharvest.com/ another webhook. $99/month
-3. https://github.com/StephenOTT/GitHub-Time-Tracking needs local maintainship (MongoDB ruby app), goes together well with    https://github.com/StephenOTT/GitHub-Analytics
-4. http://pivotaltracker.com/ full service with GitHub webhook, $100/month
+We can also maintain our own time-tracking on top of GitHub issues. There are opensource GitHub plugins for to 
+[time track](https://github.com/StephenOTT/GitHub-Time-Tracking) together with [analytics](https://github.com/StephenOTT/GitHub-Analytics). These plugins need MongoDB and are installed as Ruby app. Tested on an OpenStack VM, they are quite clumsy and would need much tuning to get them up and working.
+
+[Time-Tracker](https://timer.scm.io/) is a simple free app that allows to count time spent on GitHub issues.
 
 
 ## GitLab
 
 ## BitBucket
+
+BitBucket integrates nicely with JIRA being from the same company. It basically would need the same time tracking as GitHub, but the alternatives in this case are pretty much all Atlassian based.
 
 ## Redmine
 
