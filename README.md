@@ -1,7 +1,7 @@
-# Issues and repositories for CADC
+# Workflow platforms for CADC
 
 
-We are investigating possibilities for a single framework for tracking development, software maintenance and project management within CADC, or at least CANFAR. We are focusing on 4 popular open frameworks, which all integrate code repository, issue tracking and some kind of project management. We focus on the features which are not always available for all:
+We are investigating possibilities for a single framework for software development, user interaction, issue tracking, and project management within CADC, or at least CANFAR. We are focusing on 4 popular open frameworks, which all integrate code repository, issue tracking and some kind of project management. We focus on the features which are not always available for all:
 
 * **Grouping**: multiple issues into into one group, and across repositories for iteration planning and releases
 * **Anonymous**: somehow keep a portal for anonymous users who don't like to
@@ -9,19 +9,24 @@ We are investigating possibilities for a single framework for tracking developme
 * **Maintenance**: how much maintenance we would have to do
 * **Review**: if code review is possible
 * **CI**: continuous integration
+* **Documentation**: 
+* **Cost**: the total cost range given we want all the features and plugins per year
 
 The table below summarizes the features explored for 4 different solutions.
 
 
-| Solution      | Grouping  | Anonymous | Timing  | Maintenance | Code Review |    CI   |
-| ------------- |:---------:|:---------:|:-------:|:-----------:|:-----------:|:-------:|
-| GitHub        | plugin    | plugin    | plugins | none        | built-in    | plugins |
-| BitBucket     | ???       | built-in  | plugins | none        | built-in    | plugins |
-| GitLab        | ???       | ???       |  ???    | yes         | built-in    | plugins |
-| Redmine       | ???       | ???       | plugins | yes or pay  | plugins     |  ???    |
+| Solution      | Grouping  | Anonymous | Timing  | Maintenance  | Code Review |    CI   | Documentation | Cost   |
+| ------------- |:---------:|:---------:|:-------:|:------------:|:-----------:|:-------:|:-------------:|:------:|       
+| GitHub        | plugin    | plugin    | plugins | service      | built-in    | plugins | wiki+web      |  XX    |  
+| BitBucket     | ???       | built-in  | plugins | service      | built-in    | plugins | web           |  XX    |
+| GitLab        | ???       | ???       |  ???    | nrc          | built-in    | plugins | wiki+web      |  XX    | 
+| Redmine       | ???       | ???       | plugins | nrc|service  | plugins     |  ???    | wiki+web      |  0     |
+| WebRT+TinyPM  | yes       | no        | built-in| nrc          | no          | no      |  none         | $5,000 |
 
 
 ## GitHub
+
+GitHub is the most popular framework and is gaining a huge momentum the last two years. We have already setup a CANFAR organization and are willing to incrementally add more projects. This was our most surveyed work flow platform.
 
 #### Grouping:
 
@@ -65,4 +70,6 @@ BitBucket integrates nicely with JIRA being from the same company. It basically 
 
 ## Redmine
 
+
+## References
 
