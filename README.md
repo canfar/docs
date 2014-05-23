@@ -21,8 +21,8 @@ The table below summarizes the features explored for 4 different solutions.
 | ------------- |:-------------:|:---------:|:-------:|:---------:|:----:|:---------:|:------:|:-----------:|:---------:|
 | GitHub        | yes           | plugin    | yes     | yes       | yes  | plugin    | plugin | free service| machine   |
 | BitBucket     | yes           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
-| GitLab        | ???           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
-| Redmine       | ???           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
+| GitLab        | yes           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
+| Redmine       | yes           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
 
 
 ## GitHub
@@ -51,7 +51,7 @@ GitHub milestones can be defined with a deadline, but no time tracking is done. 
 
 "One thing to keep in mind is such time-tracking tools don't accurately capture all the time spent developing software. We generally want to encourage developers to take the time for important software development tasks that don't involve coding directly such as filing detailed issues, creating pull requests, and conducting testing and design work that live outside of GitHub. Most time-tracking tools don't achieve this alone."
 
-Many time-tracking web-hooks or plugins to GitHub exist: [Freckle](http://letsfreckle.com) ($159/month), [Harvest](http://www.getharvest.com) ($99/month), [PivotalTracker](http://pivotaltracker.com) ($100/month), [JIRA]($150/month) are some examples. [Planbox](http://www.planbox.com) (non-profit discount). All those time-tracking are integrated with issue tracking, which forces two sets of issues. Sometimes a connector to synchronize issues exists. [Basecamp](https://basecamp.com/) ($20/month) together with maybe their communication tool Campfire might be the cheaper alternative. Full intergation framework such as [asana](http://asana.com) or [Redbooth](http://redbooth.com) are also possible, but not free. [zapier](http://zapier.com) seems to make the link between issue databases.
+Many time-tracking web-hooks or plugins to GitHub exist: [Freckle](http://letsfreckle.com) ($159/month), [Harvest](http://www.getharvest.com) ($99/month), [PivotalTracker](http://pivotaltracker.com) ($100/month), [JIRA](https://www.atlassian.com/software/jira) ($150/month), or [Planbox](http://www.planbox.com) ($129/month, may be non-profit discount) are some examples. All those time-tracking systems are integrated with some issue tracking, which sometimes means two sets of issues: GitHub and the time-tracking system issue. Sometimes a connector to synchronize issues exists. [zapier](http://zapier.com) seems to make the link between issue databases. [Basecamp](https://basecamp.com/) ($20/month) together with maybe their communication tool [Campfire](https://campfirenow.com/) ($29/month) might be the popular cheaper alternative. Full intergation project management framework such as [Asana](http://asana.com) is also possible, it has 3 time tracking plugins possible, and integrate with GitHub. Might be overkill for our projects. or [Redbooth](http://redbooth.com) is another (non free) task management full featured app. All prices cited have been chosen given the size of our team as 20 people.
 
 We can also maintain our own time-tracking on top of GitHub issues. There are opensource GitHub plugins for to 
 [time track](https://github.com/StephenOTT/GitHub-Time-Tracking) together with [analytics](https://github.com/StephenOTT/GitHub-Analytics). These plugins need MongoDB and are installed as Ruby app. Tested on an OpenStack VM, they are quite clumsy and would need much tuning to get them up and working.
@@ -60,6 +60,8 @@ We can also maintain our own time-tracking on top of GitHub issues. There are op
 
 
 ## GitLab
+
+Seems very popular, emulates GitHub features, locally. Sites are down.
 
 ## BitBucket
 
