@@ -1,28 +1,24 @@
-# Issues for CADC
+# Issues and repositories for CADC
 
 
-We are investigating possibilities for a single framework for tracking development and maintenance within CADC, or at least CANFAR. The feature list is the following
+We are investigating possibilities for a single framework for tracking development, software maintenance and project management within CADC, or at least CANFAR. We are focusing on 4 popular open frameworks, which all integrate code repository, issue tracking and some kind of project management. We focus on the features which are not always available for all:
 
-* Integration: "user stories", software bugs, operations issues, features requests into one single tracking system
-* Grouping: multiple issues into into one group, and across repositories for iteration planning and releases
-* Tagging: tag issues by type (feature request, bug, operations, storage,...) 
-* Assigning: issues can be assigned or de-assigned to any developers, common to various repositories
-* Open: users can search, browse, open new issues, and comment on existing issues
-* Anonymous: somehow keep a portal for anonymous users who don't like to
-* Timing: set deadlines, time tracking
-* Maintenance: hopefully we would use services so we don't rely on our or SSC for maintaining the tracking framework
-* Filtering: avoid as much as possible the need of a human to filter the various issues at first (the helpdesk bucket model)
- 
+* **Grouping**: multiple issues into into one group, and across repositories for iteration planning and releases
+* **Anonymous**: somehow keep a portal for anonymous users who don't like to
+* **Timing**: set deadlines, set issue or story time tracking, generate reports
+* **Maintenance**: how much maintenance we would have to do
+* **Review**: if code review is possible
+* **CI**: continuous integration
 
 The table below summarizes the features explored for 4 different solutions.
 
 
-| Solution      | Integration   | Grouping  | Tagging | Assigning | Open | Anonymous | Timing | Maintenance | Filtering |
-| ------------- |:-------------:|:---------:|:-------:|:---------:|:----:|:---------:|:------:|:-----------:|:---------:|
-| GitHub        | yes           | plugin    | yes     | yes       | yes  | plugin    | plugin | free service| machine   |
-| BitBucket     | yes           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
-| GitLab        | yes           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
-| Redmine       | yes           | ???       | ???     | ???       | ???  | ???       | ???    | pay or us   | ???       |
+| Solution      | Grouping  | Anonymous | Timing  | Maintenance | Code Review |    CI   |
+| ------------- |:---------:|:---------:|:-------:|:-----------:|:-----------:|:-------:|
+| GitHub        | plugin    | plugin    | plugins | none        | built-in    | plugins |
+| BitBucket     | ???       | built-in  | plugins | none        | built-in    | plugins |
+| GitLab        | ???       | ???       |  ???    | yes         | built-in    | plugins |
+| Redmine       | ???       | ???       | plugins | yes or pay  | plugins     |  ???    |
 
 
 ## GitHub
