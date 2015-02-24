@@ -36,11 +36,11 @@ Notes:
 | ------------- |-----:|:---:|:-----:|:----:|:------:|----------|:----------|    
 | [JIRA](https://www.atlassian.com/software/jira) |2,040| all, HipChat | [desk](https://www.atlassian.com/software/jira/service-desk) |yes| yes|[demo](https://jira.atlassian.com/browse/DEMO/),[cern](https://its.cern.ch/jira/secure/Dashboard.jspa)|need JIRA Agile + JIRA Service Desk + Confluence. [free for OSS](https://www.atlassian.com/software/views/open-source-license-request)|
 | [Yodiz](http://www.yodiz.com/)| 1,800 |[slack?](http://yodiz.uservoice.com/forums/147983-general/suggestions/6367135-integrate-with-slack) | yes | no | yes |[videos](https://www.youtube.com/results?search_query=yodiz)|[free for academic](http://www.yodiz.com/free-agile-software.html)|
-| [Rally](https://www.rallydev.com/)  |[10,000](https://www.rallydev.com/platform-products/rally-editions)| Flowdock |?? |yes|yes||great for intranet, extranet not clear|
-| [YouTrack](https://youtrack.jetbrains.com/) |1,500 | XMPP | yes | yes| yes |[video](https://www.youtube.com/watch?v=d7oSxVVzb2A)|[free for OSS](https://www.jetbrains.com/youtrack/buy/open_source_incloud.jsp)
+| [Rally](https://www.rallydev.com/)  |[10,000](https://www.rallydev.com/platform-products/rally-editions)| Flowdock | ?? | yes | yes | |great for intranet, extranet not clear|
+| [YouTrack](https://youtrack.jetbrains.com/) |1,500 | XMPP | yes | yes | yes |[video](https://www.youtube.com/watch?v=d7oSxVVzb2A)|[free for OSS](https://www.jetbrains.com/youtrack/buy/open_source_incloud.jsp)
 | [PivotalTracker](http://www.pivotaltracker.com/)| 3,000 | all, Flowdock| yes | no | yes |[projects](http://www.pivotaltracker.com/community/public-projects)|[free for public or academic](https://www.pivotaltracker.com/faq#istrackerreallyfreeforpublicprojectsindividualusenonprofitsandeducators)|
-| [GitHub](https://github.com/features)| 300 | all, Gitter | [yes?](https://gitreports.com/) | [enterprise](https://help.github.com/enterprise/2.1/admin/guides/user-management/using-ldap/) | yes ||  $300/y for 10 private repos, free for OSS |
-| [GitLab](https://gitlab.com/features)| OSS | slack,Flowdock,gitter | no | yes| yes | Cybera VM (ask seb)|  |
+| [GitHub](https://github.com/features)| 300 | all, Gitter | [yes?](https://gitreports.com/) | [enterprise](https://help.github.com/enterprise/2.1/admin/guides/user-management/using-ldap/) | yes ||  $300/y for 10 private repos, free for OSS, [project management setup](https://www.lullabot.com/blog/article/managing-projects-github) |
+| [GitLab](https://gitlab.com/features)| OSS | slack, Flowdock, gitter | no | yes| yes | Cybera VM (ask seb)| agile project management might need extra software |
 | [Taiga](https://taiga.io/)   | OSS | slack | yes | yes | no |Cybera VM (ask seb)|[time tracking p.o.v.](https://taiga.io/support/why-is-there-no-time-tracking/), very new|
 | [Tuleap](https://www.tuleap.org/) | OSS |XMPP| yes | yes |no| [demo](https://demo-tuleap.enalean.com/account/login.php?return_to=%2Fmy%2F) | demo url unaccessible at HIA network. one stop solution for all CADC|
 | [OpenProject](https://www.openproject.org/) | OSS|via bot|yes|yes|redmine?|[community](https://community.openproject.org/projects/openproject/)|chat integration seems with a chat bot only|
@@ -72,22 +72,21 @@ Communication tools requirements (IN PROGRESS)
 - integration with **git** activity 
 - integration with a monitoring platform (**Mon**)
 - integration with continuous integration tests (**CI**)
-- integration with code review (**CR**)
-- Can be accessed from general chat clients via XMPP or IRC **Protocols**
-- Native **Destop** clients, generic means an all-chat kind of client (adium, pidgin,...)
+- Can be accessed from standard chat clients via XMPP or IRC **Protocols**
+- Native **Destop** clients, standard means an all-protocols chat client such as adium (OSX), pidgin (Linux), etc...
 - Native **Mobile** clients
 
 
-| Solution      | Cost | Email | Cal | git | Mon | CI | CR  | Desktop | Mobile | Protocols | Comments |
-| ------------- |-----:|:-----:|:---:|:---:|:---:|:--:|:---:|---------|--------|----------|:-----|
-| [Flowdock](https://www.flowdock.com/) | 1,080 | yes | yes | yes | yes | yes | yes | OSX| all | IRC | splitted views, threads |
-| [Slack](https://slack.com/) |2,400| yes| yes | yes | yes | yes | yes | OSX | all | IRC, XMPP
-| [HipChat](https://www.hipchat.com/)| 720|||||||all| all |XMPP| allow guest users|
-| [Gitter](https://gitter.im/) |720|||||||all|all|IRC| splitted views|
-| [OpenFire](http://www.igniterealtime.org/projects/openfire/) | OSS|||||||generic|generic|XMPP||
+| Solution      | Cost | Email | Cal | git | Mon | CI | Desktop | Mobile | Protocols | Comments |
+| ------------- |-----:|:-----:|:---:|:---:|:---:|:--:|:-------:|--------|-----------|:----------|
+| [Flowdock](https://www.flowdock.com/) | 1,080 | yes | yes | yes | yes | yes | OSX| all | IRC | splitted views, threads |
+| [Slack](https://slack.com/) |2,400| yes| yes | yes | yes | yes | OSX | all | IRC, XMPP| |
+| [HipChat](https://www.hipchat.com/)| 720| no | no | yes | yes | yes | all | all |XMPP| allow guest users|
+| [Gitter](https://gitter.im/) |720| no | no | yes | yes | yes | all | all | IRC | splitted views|
+| [OpenFire](http://www.igniterealtime.org/projects/openfire/) | OSS| yes | yes | yes | yes | yes |standard|standard|XMPP| some integrations need work |
 
 
 Other useful links:
 
  - Other tools which we have tried: [glip](https://glip.com), [eXo](http://www.exoplatform.com)(OSS)
- - Links about doing everything from chat (so-called ChatOps): [flowdock blog post](http://blog.flowdock.com/2014/11/11/chatops-devops-with-hubot/), [ChatOps at GitHub (40mn video)](https://www.youtube.com/watch?v=NST3u-GjjFw)
+ - Links about doing everything from chat (so-called ChatOps): [flowdock blog post](http://blog.flowdock.com/2014/11/11/chatops-devops-with-hubot/), [ChatOps at GitHub](https://www.youtube.com/watch?v=NST3u-GjjFw)
