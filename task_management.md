@@ -8,12 +8,16 @@ There are some **Optional** requirements. The tools satisfying these optional re
 
 Task management tools requirements
 ---------------------------------------------
-The idea is to not only solve the RT unpleasant experience, but also to integrate user issues, project management, communications and possibly other tools we are using or should be using. Hopefully that would make both the user and our own experience more pleasant and efficient.
+The idea is to not only solve the unpleasant RT  experience, but also to integrate user issues, project management, communications and possibly other tools we are using or should be using. Hopefully that would make both the user and our own experience more pleasant and efficient.
+
+The requirements are vague enough to let us have the possibility to switch not just to another RT system, but to switch to a different procedure than an RT-like process.
 
 #### Mandatory
- - user issue management features: reporting, tracking, assigning, searching (for CADC users)
- - integrates with project management (agile style was assumed mandatory)
- - manage task grouping:  project, epics, user story, task, issue...
+The tool:
+
+ - must have user issue management features: reporting, tracking, assigning, searching (for CADC users)
+ - provides project management (agile style was assumed mandatory) integrated with issue tracking
+ - can manage task grouping:  project, epics, user story, task, issue...
  - can do reports and/or task analytics 
  - can manage task dependencies
  - tracks task time (or "point")
@@ -22,9 +26,11 @@ The idea is to not only solve the RT unpleasant experience, but also to integrat
  - integrates with a chat tool: the table will list in the column **Chat** the integration with chat tools, and if it integrates with all, a subjective indication to which one it integrates best with
 
 #### Optional
- - **Email** means issue creation should be possible via email (such as: submit issues to support@blah.org)
- - **LDAP** mean whether user authentication could be done with LDAP
- - **Mobile** apps (both Android & iOS)
+
+The tool can support:
+ - **Email**: issue creation should be possible via email (such as: submit issues to support@blah.org)
+ - **LDAP**:  user authentication could be done with LDAP
+ - **Mobile**: both Android & iOS apps are supported
 
 Notes:
 
@@ -49,32 +55,38 @@ Notes:
 
 Other useful links:
 
- - [Project Management comparison tool](project-management.zone) : not always up to date
+ - [Project Management comparison tool](http://project-management.zone/) : not always up to date
  - [Google Trend JIRA vs. Redmine](http://www.google.ca/trends/explore#q=%2Fm%2F0d5lm5%2C%20%2Fm%2F0464wfc&cmpt=q&tz=), add your tool to see whether it is popular in the google sense
  - [stackshare.io](http://stackshare.io) : look for one of the tool
  - Other tools which we have tried: [asana](http://www.asana.com), [assembla](http://www.assembla.com),  [GEMINI](http://www.countersoft.com), [Phabricator](http://phabricator.org)
 
-Communication tools requirements (IN PROGRESS)
+Communication tools requirements
 ------------------------------------------
 
 ####Mandatory:
- - multi users
- - multi chat rooms (also called channels, or flows)
- - Linux, OSX access, outside from CADC as well
+The tool must:
+
+ - supports multi users (doh)
+ - supports multi chat rooms (also called channels, or flows)
+ - supports Linux and OSX access, outside from CADC as well
  - allow non-public chat rooms
  - bi-directional integration with one of the task management system above
  - integration with a deployment platform
 
 ####Optional:
+The tool can integrate with:
 
-- integration with **Email** to the chat clients
-- integration with a calendar (**Cal**)
-- integration with **git** activity 
-- integration with a monitoring platform (**Mon**)
-- integration with continuous integration tests (**CI**)
-- Can be accessed from standard chat clients via XMPP or IRC **Protocols**
-- Native **Destop** clients, standard means an all-protocols chat client such as adium (OSX), pidgin (Linux), etc...
-- Native **Mobile** clients
+- **Email** to the chat clients
+- a calendar (**Cal**)
+- **git** activity 
+- a monitoring platform (**Mon**)
+- continuous integration tests (**CI**)
+
+The tool:
+
+- can be accessed from standard chat clients via XMPP or IRC **Protocols**
+- has native **Desktop** clients, standard means an all-protocols chat client such as adium (OSX), pidgin (Linux), etc...
+- has native **Mobile** clients, both Android and iOS
 
 
 | Solution      | Cost | Email | Cal | git | Mon | CI | Desktop | Mobile | Protocols | Comments |
