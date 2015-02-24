@@ -8,14 +8,14 @@ There are some **Optional** requirements. The tools satisfying these optional re
 
 Task management tools requirements
 ---------------------------------------------
-The idea is to try to not only solve the RT unpleasant experience, but also integrate user issues, project management, communications and possibly other tools we (or want to) use. Hopefully that would make both the user and our own experience more pleasant and efficient.
+The idea is to not only solve the RT unpleasant experience, but also to integrate user issues, project management, communications and possibly other tools we are using or should be using. Hopefully that would make both the user and our own experience more pleasant and efficient.
 
 #### Mandatory
  - user issue management features: reporting, tracking, assigning, searching (for CADC users)
  - integrates with project management (agile style was assumed mandatory)
  - manage task grouping:  project, epics, user story, task, issue...
  - can do reports and/or task analytics 
- - task dependency management is possible
+ - can manage task dependencies
  - tracks task time (or "point")
  - has an interface we can access everywhere (meaning a web interface to a server hosted on a public IP VM)
  - integrates with git, i.e. in the form of a web repository viewer
@@ -28,9 +28,8 @@ The idea is to try to not only solve the RT unpleasant experience, but also inte
 
 Notes:
 
- - **Cost**: reported costs are in USD / 30 internal users / year
+ - **Cost**: reported costs are in USD / 30 internal users / year. Open Source Software (OSS) means the cost is our labour, or in all those cases, a paid service tier can maintain it for us.  
  - **Examples** : see links for some projects using those tools
- - OSS: Open Source Software, which means our own maintenance, or a paid service tier that maintains it. I 
  
  
 | Solution      | Cost | Chat| Email | LDAP | Mobile | Examples | Comments  |
@@ -51,6 +50,7 @@ Notes:
 Other useful links:
 
  - [Project Management comparison tool](project-management.zone) : not always up to date
+ - [Google Trend JIRA vs. Redmine](http://www.google.ca/trends/explore#q=%2Fm%2F0d5lm5%2C%20%2Fm%2F0464wfc&cmpt=q&tz=), add your tool to see whether it is popular in the google sense
  - [stackshare.io](http://stackshare.io) : look for one of the tool
  - Some other tools which we tried: [asana](http://www.asana.com), [assembla](http://www.assembla.com),  [GEMINI](http://www.countersoft.com), [Phabricator](http://phabricator.org)
 
@@ -74,17 +74,17 @@ Communication tools requirements (IN PROGRESS)
 - integration with continuous integration tests (**CI**)
 - integration with code review (**CR**)
 - Can be accessed from general chat clients via XMPP or IRC **Protocols**
-- Native **Destop** clients
+- Native **Destop** clients, generic means an all-chat kind of client (adium, pidgin,...)
 - Native **Mobile** clients
 
 
 | Solution      | Cost | Email | Cal | git | Mon | CI | CR  | Desktop | Mobile | Protocols | Comments |
-| ------------- |-----:|:-----:|:---:|:---:|:---:|:--:|:---:|---------|:----------|:---------|
-| [Flowdock](https://www.flowdock.com/) | 1,080 | yes | yes | yes | yes | yes | yes |  | IRC | splitted views, threads |
-| [Slack](https://slack.com/) |2,400| yes| yes | yes | yes | yes | yes |  | IRC, XMPP
-| [HipChat](https://www.hipchat.com/)| 720||||||||XMPP| allow guest users|
-| [Gitter](htttps://gittter.im/) |720||||||||IRC| splitted views|
-| [OpenFire](http://www.igniterealtime.org/projects/openfire/) | OSS||||||||XMPP||
+| ------------- |-----:|:-----:|:---:|:---:|:---:|:--:|:---:|---------|--------|----------|:-----|
+| [Flowdock](https://www.flowdock.com/) | 1,080 | yes | yes | yes | yes | yes | yes | OSX| all | IRC | splitted views, threads |
+| [Slack](https://slack.com/) |2,400| yes| yes | yes | yes | yes | yes | OSX | all | IRC, XMPP
+| [HipChat](https://www.hipchat.com/)| 720|||||||all| all |XMPP| allow guest users|
+| [Gitter](htttps://gittter.im/) |720|||||||all|all|IRC| splitted views|
+| [OpenFire](http://www.igniterealtime.org/projects/openfire/) | OSS|||||||generic|generic|XMPP||
 
 
 Other useful links:
