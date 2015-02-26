@@ -95,6 +95,7 @@ The tool:
 | [Slack](https://slack.com/) |2,400| yes| yes | yes | yes | yes | OSX | all | IRC, XMPP| |
 | [HipChat](https://www.hipchat.com/)| 720| no | no | yes | yes | yes | all | all |XMPP| allow guest users|
 | [Gitter](https://gitter.im/) |720| no | no | yes | yes | yes | all | all | IRC | splitted views|
+| [Sans](http://www.sansbullshitsans.com/)| free| yes | yes | yes | yes| yes | all | all | all | revolutionary|
 | [OpenFire](http://www.igniterealtime.org/projects/openfire/) | OSS| yes | yes | yes | yes | yes |standard|standard|XMPP| some integrations need work |
 
 
