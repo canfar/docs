@@ -46,7 +46,7 @@ Notes:
 | [YouTrack](https://youtrack.jetbrains.com/) |1,500 | XMPP | yes | yes | yes |[demo](https://www.jetbrains.com/youtrack/youtrack-hosted-master/starting-page/?name=cadc)|[free for OSS](https://www.jetbrains.com/youtrack/buy/open_source_incloud.jsp)
 | [PivotalTracker](http://www.pivotaltracker.com/)| 3,000 | all, Flowdock| yes | no | yes |[demo](https://www.pivotaltracker.com/dashboard)|[free for public or academic](https://www.pivotaltracker.com/faq#istrackerreallyfreeforpublicprojectsindividualusenonprofitsandeducators)|
 | [GitHub](https://github.com/features)| 300 | all, Gitter | [yes?](https://gitreports.com/) | [enterprise](https://help.github.com/enterprise/2.1/admin/guides/user-management/using-ldap/) | yes |[waffle demo](https://waffle.io/canfar/vos) [zenhub](https://www.zenhub.io/)|  $300/y for 10 private repos, free for OSS, [project management setup](https://www.lullabot.com/blog/article/managing-projects-github) |
-| [GitLab](https://gitlab.com/features)| OSS | slack, Flowdock, gitter | no | yes| yes | NRC blocks site | |
+| [GitLab](https://gitlab.com/features)| OSS | slack, Flowdock, gitter | no | yes| yes | NRC blocks site | GitLab site set up by the Government of Canada already - http://gitlab.ssc.etg.gc.ca/ |
 | [Taiga](https://taiga.io/)   | OSS | slack | yes | yes | no | [demo] (https://tree.taiga.io/login)| large momentum |
 | [Tuleap](https://www.tuleap.org/) | OSS |XMPP| yes | yes |no| [demo](https://demo-tuleap.enalean.com/account/login.php?return_to=%2Fmy%2F) | sourceforge++ like |
 | [OpenProject](https://www.openproject.org/) | OSS|via bot|yes|yes|redmine?|[demo](https://cadc.openproject.com/)|chat integration seems with a chat bot only|
