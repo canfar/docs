@@ -1,4 +1,4 @@
-#CANFAR Multi Site Cluster Batch Processing
+#Plan for CANFAR Multi Site Cluster Batch Processing
 
 The CANFAR batch processing infrastructure is currently running on a single cluster orchestrated on one OpenStack cloud. With Nimbus, CANFAR used to run on 4 clusters at 3 different clouds, although with less total resources. Multi site clusters were handy for cloud bursting and giving users higher availability.  To achieve reliable, efficient and scalable multi-sites would probably require a new design work flow. We describe here how we would need to do multi site clusters batch processing with OpenStack in 
 
@@ -16,10 +16,10 @@ VMs/day|  300    | 2,500 |   1500    |  3,000  |
 
 The batch scheduler servers hosts the services launching batch jobs. Batch jobs in CANFAR consists of launching user submitted jobs on user launched Virtual Machines.
 
-![Multi site cluster Architecture](http://www.canfar.phys.uvic.ca/data/pub/vospace/sfabbro/canfar_multi_cluster_architecture.png)
+![Multi site cluster Architecture](https://github.com/canfar/docs/blob/master/images/canfar_multi_cluster.png)
 
 ##Cluster Resources
-CANFAR resource allocation define the resource quota in each cloud. Given the archive and VOSpace data location, we will share resources closer to the worker VMs to minimize traffic. Each cloud should have one CANFAR batch tenant with all the quota. In each cloud, only the storage replica slots are 
+CANFAR resource allocation define the resource quota in each cloud. Given the archive and VOSpace data location, we will share storage resources closer to the worker VMs to minimize network traffic. Each cloud should have one CANFAR batch tenant with all the allocated quota for batch processing. In each cloud, only the storage replica is shared among Virtual Machines. 
 
   
 ##Central Manager
