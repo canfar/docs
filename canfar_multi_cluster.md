@@ -11,7 +11,7 @@ Below is a table of the rounded number of idle and running jobs and Virtual Mach
 -------| -------:|---------:| -------:|------:
 Running Jobs| 150     | 1,100    |  300    | 2,000
 Idle Jobs  | 100,000 | 300,000  | 100,000 | 300,000
-VMs/day|  300    | 2,500 |   1500    |  3,000  |
+VMs / day|  300    | 2,500 |   1500    |  3,000  |
 
 
 The batch scheduler server hosts the services launching batch jobs. Batch jobs in CANFAR consists of running user submitted jobs on user launched Virtual Machines.
@@ -70,19 +70,21 @@ Each component of the user layer can be replicated and thus distribution is made
 
 ##Tasks
 
-1. Resource deployment:
-VM and bare metal instances are launched according to the resource needs described above. The base OS is either Ubuntu Server or CentOS.
+1. Resource deployment
+
+	VM and bare metal instances are launched according to the resource needs described above. The base OS is either Ubuntu Server or CentOS.
 
 2. Software installation
-We want to manage all the servers automatically to be able to ease disaster recovery, so we will use a configuration management system to deploy all the software and updates to bare metal or VM servers described above. Monitoring and alerting are also needed on each configured servers to report back to the CANFAR central monitoring service.  
-We will therefore need the following extra software for each deployed server instance:
 
-- configuration management `puppet` agent to automate updates
-- collector agent `logstash` to report the CANFAR monitoring and analytics services
-- alert engine `nagios` or `prometheus` to quickly respond to failures.
+	We want to manage all the servers automatically to be able to ease disaster recovery, so we will use a configuration management system to deploy all the software and updates to bare metal or VM servers described above. Monitoring and alerting are also needed on each configured servers to report back to the CANFAR central monitoring service.  We will therefore need the following extra software for each deployed server instance:
+	* configuration management `puppet` agent to automate updates
+	* collector agent `logstash` to report the CANFAR monitoring and analytics services
+	* alert engine `nagios` or `prometheus` to quickly respond to failures.
 
 3. Deployment
-We will test and iterate the automated deployment of the CANFAR batch VMs on the clouds. Critical alpha users will run a thousands of jobs while we monitor the proper scheduling of the job,  scalability of the storage access both to VOSpace and local.
+
+	We will test and iterate the automated deployment of the CANFAR batch VMs on the clouds. Critical alpha users will run a thousands of jobs while we monitor the proper scheduling of the job,  scalability of the storage access both to VOSpace and local.
 
 4. Release
-Given successful deployment with alpha users, we will release the operational multi site cluster to CANFAR users.
+
+	Given successful deployment with alpha users, we will release the operational multi site cluster to CANFAR users.
