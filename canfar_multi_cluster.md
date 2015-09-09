@@ -34,9 +34,21 @@ Central Manager  requirements:
  - cloud clients for instance and image management: `OpenStack nova` and `glance`
  - contextualization for worker VMs with `cloud-init`  generated files for `HTCondor` and `GlusterFS` configuration
 
-##POSIX Accessible VM Storage
+## Storage
+To manage data inputs and outputs in batch jobs, most users transport their data on remote servers which are accessible via HTTP clients to the CANFAR VOSpace storage service or the CANFAR data web service. We have two layers of storage to maximize data transfers with either HTTP or POSIX storage.
 
-To manage data inputs and outputs in batch jobs, most users transport their data on remote servers which are accessible via HTTP clients to the CANFAR VOSpace storage service. The current CANFAR VOSpace implementation is inefficient for small files, failover procedures are not scalable, and connect to a single point of failure in the CANFAR central services.  As a workaround to those reliability issues, we are also offering a shared file system for specific users accessible as read-only to their VMs. It is not linked to the CANFAR identity services, it has been so far tailored only for critical users. It is also not setup for intensive fast i/o such as HPC situations. It consists of a distributed shared file system with POSIX access on regular cloud managed block devices, with geographical replication.
+### Cache Storage
+The cache storage is described in more details in the "Mirroring Storage" document which we summarize here.  The cache storage is designed for fast writes of incoming data from processing VMs through the web services.  The cache nodes consists of HTTP servers with local disk storage.  Cache storage will keep a file for a few hours at most.
+
+Cache storage requirements:
+
+ - 4 nodes 32GB RAM, 12 cores, 3TB fast access disk
+ - CANFAR cache storage software stack
+
+
+### POSIX Storage
+
+The current CANFAR VOSpace storage implementation is inefficient for small files, failover procedures are not scalable, and connect to a single point of failure in the CANFAR central services.  As a workaround to those reliability issues, we are also offering a shared file system for specific users accessible as read-only to their VMs. It is not linked to the CANFAR identity services, it has been so far tailored only for critical users. It is also not setup for intensive fast i/o such as HPC situations. It consists of a distributed shared file system with POSIX access on regular cloud managed block devices, with geographical replication.
 
 We also would like to carry on the capability of large POSIX shared file storage accessible for users. Many astronomy legacy software only work with POSIX access to file systems. Given the complexity of delegating single user authorization across clusters and VMs and the scope of this proposal, we would restrict the file system as read-only and public.
 
