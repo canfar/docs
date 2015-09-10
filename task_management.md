@@ -28,8 +28,8 @@ The tool:
 #### Optional
 
 The tool can support:
- - **Email**: issue creation should be possible via email (such as: submit issues to support@blah.org)
- - **LDAP**:  user authentication could be done with LDAP
+ - **Support**: issue creation should be possible via email (such as: submit issues to support@blah.org) or a web form. They also might have a knowledge base or FAQ integrated.
+ - **GitHub**:  most tools use commit based references. Some use bidirectional with issues and commits
  - **Mobile**: both Android & iOS apps are supported
 
 Notes:
@@ -38,19 +38,19 @@ Notes:
  - **Examples** : see links for some projects using those tools
  
  
-| Solution      | Cost | Chat| Email | LDAP | Mobile | CADC Demo  | Comments  |
-| ------------- |-----:|:---:|:-----:|:----:|:------:|------------|:----------|    
-| [JIRA](https://www.atlassian.com/software/jira) |2,040| all, HipChat | [desk](https://www.atlassian.com/software/jira/service-desk) |yes| yes|TBD|JIRA + JIRA Agile + JIRA Service Desk + Confluence. [free for OSS](https://www.atlassian.com/software/views/open-source-license-request)|
-| [Yodiz](http://www.yodiz.com/)| 1,800 | slack | yes | no | yes |[demo](https://app.yodiz.com)|[free for academic](http://www.yodiz.com/free-agile-software.html)|
-| [Rally](https://www.rallydev.com/)  |[10,000](https://www.rallydev.com/platform-products/rally-editions)| Flowdock | ?? | yes | yes | |great for intranet, extranet not clear|
-| [YouTrack](https://youtrack.jetbrains.com/) |1,500 | XMPP | yes | yes | yes |[demo](https://www.jetbrains.com/youtrack/youtrack-hosted-master/starting-page/?name=cadc)|[free for OSS](https://www.jetbrains.com/youtrack/buy/open_source_incloud.jsp)
-| [PivotalTracker](http://www.pivotaltracker.com/)| 3,000 | all, Flowdock| yes | no | yes |[demo](https://www.pivotaltracker.com/dashboard)|[free for public or academic](https://www.pivotaltracker.com/faq#istrackerreallyfreeforpublicprojectsindividualusenonprofitsandeducators)|
-| [GitHub](https://github.com/features)| 300 | all, Gitter | [yes?](https://gitreports.com/) | [enterprise](https://help.github.com/enterprise/2.1/admin/guides/user-management/using-ldap/) | yes |[waffle demo](https://waffle.io/canfar/vos) [zenhub](https://www.zenhub.io/)|  $300/y for 10 private repos, free for OSS, [project management setup](https://www.lullabot.com/blog/article/managing-projects-github) |
-| [GitLab](https://gitlab.com/features)| OSS | slack, Flowdock, gitter | no | yes| yes | NRC blocks site | GitLab site set up by the Government of Canada already - http://gitlab.ssc.etg.gc.ca/ |
-| [Taiga](https://taiga.io/)   | OSS | slack | yes | yes | no | [demo] (https://tree.taiga.io/login)| large momentum |
-| [Tuleap](https://www.tuleap.org/) | OSS |XMPP| yes | yes |no| [demo](https://demo-tuleap.enalean.com/account/login.php?return_to=%2Fmy%2F) | sourceforge++ like |
-| [OpenProject](https://www.openproject.org/) | OSS|via bot|yes|yes|redmine?|[demo](https://cadc.openproject.com/)|chat integration seems with a chat bot only|
-| [Redmine](http://www.redmine.org/)| OSS |HipChat, Flowdock, XMPP |yes|yes|yes| EasyRedmine (TBD)|most complete solution|
+| Solution      | Cost | Chat| Support | GitHub | Mobile | Demo     | Comments  |
+| ------------- |-----:|:---:|:-----:|:----:|:------:|----------|:----------|    
+| [JIRA](https://www.atlassian.com/software/jira) |2,040| all, HipChat | email, form with [desk](https://www.atlassian.com/software/jira/service-desk) |commits| yes|[demo](https://jira.atlassian.com/browse/DEMO/),[cern](https://its.cern.ch/jira/secure/Dashboard.jspa)|need JIRA Agile + JIRA Service Desk + Confluence for knowledge base. [free for OSS](https://www.atlassian.com/software/views/open-source-license-request)|
+| [Yodiz](http://www.yodiz.com/)| 1,800 | slack | email | commits | yes |[demo](https://signin.yodiz.com/auth/login?mode=demo)|[free for academic](http://www.yodiz.com/free-agile-software.html)|
+| [Rally](https://www.rallydev.com/)  |[10,000](https://www.rallydev.com/platform-products/rally-editions)| Flowdock | need user registration | yes | yes | | need user registration |
+| [YouTrack](https://youtrack.jetbrains.com/) |1,500 | XMPP, slack | form, email, search | commits | yes |[demo](https://canfar.myjetbrains.com/youtrack)|[free for OSS](https://www.jetbrains.com/youtrack/buy/open_source_incloud.jsp)
+| [PivotalTracker](http://www.pivotaltracker.com/)| 3,000 | all, Flowdock| no | commits | yes |[projects](http://www.pivotaltracker.com/community/public-projects)|[free for public or academic](https://www.pivotaltracker.com/faq#istrackerreallyfreeforpublicprojectsindividualusenonprofitsandeducators)|
+| [GitHub](https://github.com/features)| 300 | all, Gitter | [web](https://gitreports.com/) | all | yes | [demo](http://github.com/canfar)|  $300/y for 10 private repos, free for OSS, PM: [ZenHub](http://zenhub.io/), [waffle](http://waffle.io), [codetree](http://codetree.com), [HuBoard](https://huboard.com/), [overv](http://overv.io)|
+| [GitLab](https://gitlab.com/features)| OSS | slack, Flowdock, gitter | no | yes | yes |[SSC](http://gitlab.ssc.etg.gc.ca/) | agile project management and helpdesk need extra software |
+| [Taiga](https://taiga.io/)   | OSS | slack | need user registration | yes | no | [demo](https://tree.taiga.io/login)| |
+| [Tuleap](https://www.tuleap.org/) | OSS |XMPP| yes | commits |no| [demo](https://demo-tuleap.enalean.com/account/login.php?return_to=%2Fmy%2F) | demo url unaccessible at HIA network. one stop solution for all CADC|
+| [OpenProject](https://www.openproject.org/) | OSS|via bot|yes|no|redmine?|[community](https://community.openproject.org/projects/openproject/)|chat integration seems with a chat bot only|
+| [Redmine](http://www.redmine.org/)| OSS |HipChat, Flowdock, XMPP |yes|commits|yes| no|most complete solution. painful to get friendly (but possible)|
 
 
 Other useful links:
