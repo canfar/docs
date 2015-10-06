@@ -20,7 +20,7 @@ A caution with regards to pairing of nodes between sites.  AD is fairly simplist
 
 Note that AD does not have the concept of a ‘read-only’ node: all nodes are expected to be able to accept writes (through the privileged HTTP instance).
 
-![image alt text](image_0.png)
+![CADC/CANFAR Storage sub-systems and connections](https://github.com/canfar/docs/blob/master/images/CADC_CANFAR_subsystems.png)
 
 ##AD Deployment
 
